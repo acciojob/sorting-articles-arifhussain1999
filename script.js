@@ -14,7 +14,7 @@ function strip(article) {
 const sortedBands = bands.sort((a, b) => strip(a).localeCompare(strip(b)));
 
 // Display the sorted bands in the unordered list
-const ul = document.getElementById('band');
+const ul = document.getElementById('bands');
 sortedBands.forEach(band => {
     const li = document.createElement('li');
     li.textContent = band;
